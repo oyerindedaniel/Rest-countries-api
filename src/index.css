@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Nunito Sans", sans-serif;
+  }
+
+  li {
+    text-decoration: none;
+    padding: 0.25rem 0.25rem 0.25rem 1rem;
+  }
+
+  input {
+    outline: none;
+  }
+}
+
+@layer utilities {
+  .width90 {
+    width: 90%;
+  }
+  .max-width35rem {
+    max-width: 45rem;
+  }
+
+  .width28rem {
+    width: 28rem;
+  }
+
+  .centered {
+    text-align: center;
+    margin: 4rem auto;
+  }
+
+  .minHeight20 {
+    min-height: 20rem;
+  }
+
+  .imageFill {
+    flex-shrink: 0;
+    min-width: 100%;
+    height: 25rem;
+    object-fit: contain;
+  }
+
+  .max-w-13rem {
+    max-width: 13rem;
+  }
+
+  .min-h-5rem {
+    min-height: 5rem;
+  }
+
+  .flex-cont1 {
+    flex: 0 1 45%;
+  }
+
+  .flex-cont2 {
+    flex: 0 1 55%;
+  }
+
+  .p-cont {
+    padding: 1.5rem 3.5rem;
+  }
+
+  .p-cont-vsm {
+    padding: 1.5rem 1.5rem;
+  }
+}
+
+@layer components {
+  .flex-countries {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 3rem;
+  }
+
+  .flex-countries-media860px {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 14rem));
+    gap: 7rem;
+    justify-content: center;
+  }
+
+  .flex-countries-maxMedia570px {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 16rem));
+    gap: 3rem;
+    justify-content: center;
+  }
+
+  .overflow-scrollbar::-webkit-scrollbar {
+    width: 0.6rem; /* width of the entire scrollbar */
+  }
+
+  .overflow-scrollbar::-webkit-scrollbar-thumb {
+    --tw-bg-opacity: 1;
+    background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+    border-radius: 20px; /* roundness of the scroll thumb */
+  }
+}
