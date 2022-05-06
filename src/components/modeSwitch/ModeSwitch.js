@@ -18,7 +18,7 @@ const ModeSwitch = () => {
           }`}
         ></use>
       </svg>
-      <h4 class="font-semibold text-black dark:text-white">
+      <h4 class="font-semibold text-black dark:text-white vsm:hidden">
         {colorTheme === "light" ? "Light Mode" : "Dark Mode"}
       </h4>
     </span>

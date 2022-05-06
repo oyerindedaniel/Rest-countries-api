@@ -9,22 +9,16 @@ const Layout = (props) => {
   return (
     <Fragment>
       <nav class="bg-white dark:bg-darkEle shadow-md">
-        <div class="flex justify-between items-center p-cont vsm:p-cont-vsm">
+        <div class="flex justify-between items-center p-cont vsm:p-cont-vsm relative">
           <Link
             to="/"
-            class="font-extrabold text-xl text-black dark:text-white relative"
+            class="font-extrabold text-xl text-black dark:text-white"
           >
             Where in the world?
-            <span class="text-xs font-normal absolute w-full left-4 top-6 vsm:hidden">
-              Made by{" "}
-              <Link
-                to="https://twitter.com/_danieloyerinde"
-                class="text-black dark:text-white relative"
-              >
-                OYERINDE DANIEL
-              </Link>
-            </span>
           </Link>
+          <span class="text-xs font-normal absolute w-full left-16 top-12 vsm:hidden dark:text-white">
+            Made by OYERINDE DANIEL
+          </span>
           <div>
             <ModeSwitch />
           </div>
